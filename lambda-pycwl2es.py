@@ -30,17 +30,6 @@ Set up the following as Lambda environment variables:
     region        region name for AWS, for example: cn-north-1
     baseUrl       base URL for current AWS region, for example: amazonaws.com.cn
     esDomain      domain name for ElasticSearch service
-    
-They can be set via console, CLI or CF template. E.g.:
-        aws lambda create-function \
-          --region us-east-1
-          --function-name myFunction
-          --zip-file file://path/package.zip
-          --role role-arn
-          --environment Variables={bucket1=mybucket1}
-          --handler index.handler
-          --runtime python2.7
-          --profile default   
 
 @author Henry Huang
 @date December 2018
